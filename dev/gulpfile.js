@@ -71,20 +71,22 @@ gulp.task('img_comp', function() {
 // js concat and uglify
 
 // define js files as sorted
-const js_source = 'js/';
+var js_source = 'js/';
 
 var js_files_single = [
-    // 'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/jquery/dist/jquery.min.js',
+    'bower_components/matchHeight/jquery.matchHeight-min.js',
     js_source + 'waypoints.min.js',
     js_source + 'scripts.js',
     js_source + 'bootstrap.min.js',
     js_source + 'jquery.flexslider.js',
-    js_source + 'modernizr.js'
-    // js_source + 'overlay.js',
+    js_source + 'jquery.smooth-scroll.js',
+    js_source + 'modernizr.js',
+    js_source + 'user.js',
 ];
 
 gulp.task('js_single', function() {
-  gulp.src("js/**/*.js")
+  gulp.src(js_files_single)
       .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(concat('app.js'))

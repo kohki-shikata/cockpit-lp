@@ -1,0 +1,39 @@
+section#responsive.text-center
+  .container-fluid.nopadding.responsive-services
+    .wrapper
+      .iphone
+        .wp3
+      .fluid-white
+    .container.designs
+      .row
+        .col-md-7.col-md-offset-5
+          div
+            // Nav tabs
+            ul.nav.nav-tabs(role='tablist')
+              li.active(role='presentation')
+                a(href='#offer-regular', aria-controls='home', role='tab', data-toggle='tab') 正社員
+              li(role='presentation')
+                a(href='#offer-contract', aria-controls='profile', role='tab', data-toggle='tab') 契約社員
+              li(role='presentation')
+                a(href='#offer-parttime', aria-controls='messages', role='tab', data-toggle='tab') パートタイマー
+              li(role='presentation')
+                a(href='#offer-intern', aria-controls='settings', role='tab', data-toggle='tab') インターン
+            // Tab panes
+            .tab-content
+              #offer-regular.tab-pane.active(role='tabpanel')
+                table
+                  tr
+                    th 勤務時間
+                    td 9:00~18:00
+                  tr
+                    th 休日
+                    td 土日祝日（完全週休２日制）、夏季休暇、年末年始休暇
+                  tr
+                    th 給与
+                    td 25万円〜50万円
+                  tr
+                    th 福利厚生
+                    td 交通費支給、月3万円まで
+              #offer-contract.tab-pane(role='tabpanel') ...
+              #offer-parttime.tab-pane(role='tabpanel') ...
+              #offer-intern.tab-pane(role='tabpanel') ...

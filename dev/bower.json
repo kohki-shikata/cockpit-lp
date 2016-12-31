@@ -1,0 +1,17 @@
+{
+  "name": "cockpit-lp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kohki SHIKATA"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kohki-shikata/cockpit-lp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

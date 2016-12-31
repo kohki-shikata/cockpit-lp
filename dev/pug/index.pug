@@ -15,123 +15,26 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
   body#top
     header#home
-      nav
-        .container-fluid
-          .row
-            .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-8.col-xs-offset-2
-              nav.pull
-                ul.top-nav
-                  li
-                    a(href='#intro')
-                      | Introduction
-                      span.indicator
-                        i.fa.fa-angle-right
-                  li
-                    a(href='#features')
-                      | Features
-                      span.indicator
-                        i.fa.fa-angle-right
-                  li
-                    a(href='#responsive')
-                      | Responsive Design
-                      span.indicator
-                        i.fa.fa-angle-right
-                  li
-                    a(href='#portfolio')
-                      | Portfolio
-                      span.indicator
-                        i.fa.fa-angle-right
-                  li
-                    a(href='#team')
-                      | Team
-                      span.indicator
-                        i.fa.fa-angle-right
-                  li
-                    a(href='#contact')
-                      | Get in Touch
-                      span.indicator
-                        i.fa.fa-angle-right
+      include elements/_nav
       section#hero.hero
         .container
+          include elements/_nav_button
           .row
-            .col-md-12.text-right.navicon
-              a#nav-toggle.nav_slide_button(href='#')
-                span
-          .row
-            .col-md-8.col-md-offset-2.text-center.inner
+            .col-md-10.col-md-offset-1.text-center.inner
               h1.animated.fadeInDown
-                | HALCYON
-                span DAYS
+                | Webの未来を作る仲間、募集中
               p.animated.fadeInUp.delay-05s
-                | An exclusive HTML5/CSS3 freebie by Peter Finlan, for
-                em Codrops
-          .row
-            .col-md-6.col-md-offset-3.text-center
-              a.learn-more-btn(href='http://tympanus.net/codrops/?p=19439') Back to the article
+                | 株式会社サンプルコンテンツでは、共にWeb制作業務に携わってくださる方を募集しています。
     section#intro.intro.text-center.section-padding
       .container
         .row
           .col-md-8.col-md-offset-2.wp1
-            h1.arrow A Creative Portfolio Template
-            p
-              | Sed a lorem quis neque interdum
-              a(href='#') consequat ut sed sem
-              | . Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-    section#features.features.text-center.section-padding
-      .container
-        .row
-          .col-md-12
-            h1.arrow Love what you do, and you'll do it well
-            .features-wrapper
-              .col-md-4.wp2
-                .icon
-                  i.fa.fa-laptop.shadow
-                h2 Digital Design
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                  | primis in faucibus.
-              .col-md-4.wp2.delay-05s
-                .icon
-                  i.fa.fa-code.shadow
-                h2 Web Development
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                  | primis in faucibus.
-              .col-md-4.wp2.delay-1s
-                .icon
-                  i.fa.fa-heart.shadow
-                h2 Creative Direction
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                  | primis in faucibus.
-              .clearfix
-    section#responsive.text-center
-      .container-fluid.nopadding.responsive-services
-        .wrapper
-          .iphone
-            .wp3
-          .fluid-white
-        .container.designs
-          .row
-            .col-md-5.col-md-offset-7
-              #servicesSlider
-                ul.slides
-                  li
-                    h1.arrow Responsive Design Specialists
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-                    p
-                      | Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.
-                    p
-                      | Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.
-                  li
-                    h1.arrow Bootstrap Professionals
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-                    p
-                      | Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.
-                    p
-                      | Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.
+            h1.arrow 私達の思い
+            p 日々進化を続けるIT業界において、Webは特にそのスピードが早い分野です。それと同時に、私達のお客様から求められる技術や品質もどんどん高いものとなっています。
+            p そんな厳しい環境においても、共に「面白い」「ワクワクする」を追い求め続ける、飽くなきチャレンジが出来るクリエイターを募集しています。
+
+    include elements/_jobs
+    include elements/_offer
     section.swag.text-center
       .container
         .row
@@ -404,5 +307,6 @@ html(lang='en')
               |  exclusively for
               a(href='http://tympanus.net/codrops/')
                 em Codrops
-    script(src='//code.jquery.com/jquery-1.12.4.min.js')
+    //- script(src='//code.jquery.com/jquery-1.10.0.min.js')
+    //- script(src='http://brm.io/js/libs/matchHeight/jquery.matchHeight.js')
     script(src='/common/js/app.js')

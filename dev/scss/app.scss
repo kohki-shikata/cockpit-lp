@@ -1,5 +1,64 @@
-@import "partial/_bootstrap-theme.min";
-@import "partial/_flexslider";
-@import "partial/_styles";
-@import "partial/_queries";
-@import "partial/_animate";
+@import "partial/lib/_bootstrap";
+@import "partial/lib/_flexslider";
+@import "partial/lib/_styles";
+@import "partial/lib/_queries";
+@import "partial/lib/_animate";
+
+$site-main: #37b7a3;
+
+p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.features-wrapper {
+  .desc {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+.iphone {
+  width: 33.333333%;
+}
+
+td {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border: 2px solid $site-main;
+  th,td {
+    border: 1px solid #ddd;
+    padding: 2em;
+  }
+  th {
+    background-color: lighten($site-main, 45%);
+  }
+}
+
+.nav-tabs {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  margin-bottom: -2px;
+  li {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    width: 100%;
+    a {
+      display: block;
+    }
+  }
+  li.active a {
+    border-color: $site-main;
+    background-color: $site-main;
+    color: #fff;
+    font-weight: 800;
+  }
+
+}
