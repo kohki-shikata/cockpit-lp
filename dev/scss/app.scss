@@ -52,6 +52,11 @@ table {
     width: 100%;
     a {
       display: block;
+      background-color: transparent;
+      &:hover {
+        background-color: lighten($site-main, 35%);
+        color: #444;
+      }
     }
   }
   li.active a {
@@ -59,6 +64,16 @@ table {
     background-color: $site-main;
     color: #fff;
     font-weight: 800;
+    &:focus {
+      background-color: lighten($site-main, 15%);
+      color: #fff;
+    }
   }
 
+}
+
+.offer {
+  h1 {
+    margin-bottom: 40px;
+  }
 }
