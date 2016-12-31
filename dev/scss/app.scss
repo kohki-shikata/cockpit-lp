@@ -77,3 +77,21 @@ table {
     margin-bottom: 40px;
   }
 }
+
+.interview {
+  table {
+    th,td {
+      text-align: center;
+    }
+  }
+}
+
+a.btn {
+  display: inline-block;
+  background-color: $site-main;
+  color: #fff;
+  &:hover {
+    color: darken($site-main, 25%);
+    background-color: lighten($site-main, 25%);
+  }
+}

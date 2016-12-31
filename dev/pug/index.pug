@@ -40,103 +40,31 @@ html(lang='en')
         .row
           .col-md-8.col-md-offset-2
             h1
-              | 
+              | 会社のこと、業務のこと、
+              br
+              | 直接質問できます
               span
-                | but
-                em design
-                |  'aint one
+                | 会社説明会を定期的に開催しています。
             a.down-arrow-btn(href='#portfolio')
               i.fa.fa-chevron-down
-    section#portfolio.portfolio.text-center.section-padding
+    section#portfolio.portfolio.text-center.section-padding.interview
       .container
         .row
-          #portfolioSlider
-            ul.slides
-              li
-                .col-md-4.wp4
-                  .overlay-effect.effects.clearfix
-                    .img
-                      img(src='/common/img/portfolio-01.jpg', alt='Portfolio Item')
-                      .overlay
-                        a.expand(href='#')
-                          i.fa.fa-search
-                          br
-                          | View More
-                        a.close-overlay.hidden x
-                  h2 Creative Minds
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-                .col-md-4.wp4.delay-05s
-                  .overlay-effect.effects.clearfix
-                    .img
-                      img(src='/common/img/portfolio-02.jpg', alt='Portfolio Item')
-                      .overlay
-                        a.expand(href='#')
-                          i.fa.fa-search
-                          br
-                          | View More
-                        a.close-overlay.hidden x
-                  h2 Creative Hearts
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-                .col-md-4.wp4.delay-1s
-                  .overlay-effect.effects.clearfix
-                    .img
-                      img(src='/common/img/portfolio-03.jpg', alt='Portfolio Item')
-                      .overlay
-                        a.expand(href='#')
-                          i.fa.fa-search
-                          br
-                          | View More
-                        a.close-overlay.hidden x
-                  h2 Creative Ideas
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-              li
-                .col-md-4.wp4
-                  .overlay-effect.effects.clearfix
-                    .img
-                      img(src='/common/img/portfolio-01.jpg', alt='Portfolio Item')
-                      .overlay
-                        a.expand(href='#')
-                          i.fa.fa-search
-                          br
-                          | View More
-                        a.close-overlay.hidden x
-                  h2 Creative Minds
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-                .col-md-4.wp4.delay-05s
-                  .overlay-effect.effects.clearfix
-                    .img
-                      img(src='/common/img/portfolio-02.jpg', alt='Portfolio Item')
-                      .overlay
-                        a.expand(href='#')
-                          i.fa.fa-search
-                          br
-                          | View More
-                        a.close-overlay.hidden x
-                  h2 Creative Hearts
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-                .col-md-4.wp4.delay-1s
-                  .overlay-effect.effects.clearfix
-                    .img
-                      img(src='/common/img/portfolio-03.jpg', alt='Portfolio Item')
-                      .overlay
-                        a.expand(href='#')
-                          i.fa.fa-search
-                          br
-                          | View More
-                        a.close-overlay.hidden x
-                  h2 Creative Ideas
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
-    .ignite-cta.text-center
-      .container
-        .row
-          .col-md-12
-            a.ignite-btn(href='#') Ignite Your Passion
+          table
+            thead
+              tr
+                th 開催日
+                th 時間
+                th 場所
+                th 担当者名
+                th
+            tbody
+              tr
+                td 10月21日
+                td 18:00~19:30
+                td 株式会社サンプルコンテンツ大阪本社 会議室
+                td 山田 太郎
+                td: a.btn(href="#"): i.fa.fa-envelope 申し込む
     section#team.team.text-center.section-padding
       .container
         .row
